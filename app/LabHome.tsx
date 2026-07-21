@@ -85,9 +85,9 @@ const copy = {
     researchTitle: "세 개의 질문, 하나의 방향",
     researchSubtitle: "진균의 병원성과 진화를 이해하고, 그 지식을 사람과 작물을 위한 기술로 연결합니다.",
     researchItems: [
-      { title: "병원성과 약제 내성 기작", body: "통합 멀티오믹스 접근으로 병원성 진균의 독성과 약제 내성을 촉진하는 새로운 기작을 탐구합니다. 특히 단백질 번역 조절이 병원성과 내성 관련 유전자 발현을 어떻게 제어하는지 밝힙니다.", image: "/images/research-multiomics.png", alt: "유전체학, 전사체학, 단백질체학, 인산화단백질체학을 통합한 진균 멀티오믹스 연구 모식도" },
-      { title: "식물 실시간 모니터링 나노센서", body: "식물이 가뭄, 상처, 질병에 대응하며 방출하는 신호 물질을 실시간으로 감지하는 나노센서를 개발합니다. 스트레스를 조기에 발견해 작물 피해를 줄이고 자원을 효율적으로 사용하는 농업을 지향합니다.", image: "/images/research-nanosensor.png", alt: "식물 조직에 삽입한 마이크로니들 센서로 스트레스 신호를 실시간 측정하는 모식도" },
-      { title: "AI로 탐구하는 버섯 진화", body: "계통유전체 정보, 형태 이미지, 생태 데이터를 인공지능과 결합해 버섯의 독성, 색, 형태와 같은 핵심 형질이 어떻게 등장하고 다양해졌는지 탐구합니다.", image: "/images/research-mushroom-ai.png", alt: "버섯 이미지를 합성곱 신경망으로 분류해 진화 형질을 분석하는 모식도" },
+      { title: "병원성과 약제 내성 기작", body: "통합 멀티오믹스 접근으로 병원성 진균의 독성과 약제 내성을 촉진하는 새로운 기작을 탐구합니다. 특히 단백질 번역 조절이 병원성과 내성 관련 유전자 발현을 어떻게 제어하는지 밝힙니다.", image: "/images/research-multiomics-v2.webp", alt: "유전체학, 전사체학, 단백질체학, 인산화단백질체학을 통합한 진균 멀티오믹스 연구 모식도" },
+      { title: "식물 실시간 모니터링 나노센서", body: "식물이 가뭄, 상처, 질병에 대응하며 방출하는 신호 물질을 실시간으로 감지하는 나노센서를 개발합니다. 스트레스를 조기에 발견해 작물 피해를 줄이고 자원을 효율적으로 사용하는 농업을 지향합니다.", image: "/images/research-nanosensor-v3.webp", alt: "식물 조직에 삽입한 마이크로니들 센서로 ABA에 따른 전기 신호 변화를 실시간 측정하는 모식도" },
+      { title: "AI로 탐구하는 버섯 진화", body: "계통유전체 정보, 형태 이미지, 생태 데이터를 인공지능과 결합해 버섯의 독성, 색, 형태와 같은 핵심 형질이 어떻게 등장하고 다양해졌는지 탐구합니다.", image: "/images/research-mushroom-ai-v3.webp", alt: "계통유전체, 버섯 이미지, 생태 데이터를 AI로 통합해 독성, 색, 형태의 진화 형질을 분석하는 모식도" },
     ],
     piKicker: "Principal Investigator",
     piTitle: "Kyunghun Min",
@@ -150,9 +150,9 @@ const copy = {
     researchTitle: "Three questions. One direction.",
     researchSubtitle: "We connect fundamental discoveries in fungal virulence and evolution to technologies that protect people, plants, and ecosystems.",
     researchItems: [
-      { title: "Mechanisms of virulence and drug resistance", body: "We employ integrative multi-omics approaches to investigate novel mechanisms that promote virulence and drug resistance in pathogenic fungi. Our work reveals how the regulation of protein translation controls gene expression involved in virulence and resistance.", image: "/images/research-multiomics.png", alt: "Diagram integrating genomics, transcriptomics, proteomics, and phosphoproteomics to study fungal morphogenesis" },
-      { title: <>Nanosensors for real-time<br />monitoring in plants</>, body: "Plants release signaling molecules to manage drought, wounds, and disease. We develop nanosensors that detect these stress-related molecules in real time, creating opportunities to mitigate stress and prevent disease while using resources more efficiently.", image: "/images/research-nanosensor.png", alt: "Microneedle biosensor inserted into a plant for real-time electrical monitoring of stress signals" },
-      { title: "Exploring mushroom evolution with AI", body: "By integrating phylogenomic data, morphological images, and ecological information, we develop AI-based models to understand how toxicity, coloration, morphology, and other traits emerged and diversified across fungal lineages.", image: "/images/research-mushroom-ai.png", alt: "Convolutional neural network classifying mushroom images by visible evolutionary traits" },
+      { title: "Mechanisms of virulence and drug resistance", body: "We employ integrative multi-omics approaches to investigate novel mechanisms that promote virulence and drug resistance in pathogenic fungi. Our work reveals how the regulation of protein translation controls gene expression involved in virulence and resistance.", image: "/images/research-multiomics-v2.webp", alt: "Diagram integrating genomics, transcriptomics, proteomics, and phosphoproteomics to study fungal morphogenesis" },
+      { title: <>Nanosensors for real-time<br />monitoring in plants</>, body: "Plants release signaling molecules to manage drought, wounds, and disease. We develop nanosensors that detect these stress-related molecules in real time, creating opportunities to mitigate stress and prevent disease while using resources more efficiently.", image: "/images/research-nanosensor-v3.webp", alt: "Microneedle biosensor inserted into a plant for real-time monitoring of ABA-dependent electrical signals" },
+      { title: "Exploring mushroom evolution with AI", body: "By integrating phylogenomic data, morphological images, and ecological information, we develop AI-based models to understand how toxicity, coloration, morphology, and other traits emerged and diversified across fungal lineages.", image: "/images/research-mushroom-ai-v3.webp", alt: "Diagram integrating phylogenomics, mushroom images, and ecological data with AI to analyze toxicity, coloration, and morphology as evolutionary traits" },
     ],
     piKicker: "Principal Investigator",
     piTitle: "Kyunghun Min",
@@ -271,7 +271,7 @@ export default function LabHome({ locale }: { locale: Locale }) {
         <div className="research-list">
           {t.researchItems.map((item, index) => (
             <article className="research-card" key={item.image}>
-              <div className="research-card-image"><Image src={sitePath(item.image)} alt={item.alt} width={index === 1 ? 1296 : index === 2 ? 1236 : 858} height={index === 1 ? 1074 : index === 2 ? 611 : 878} /></div>
+              <div className="research-card-image"><Image src={sitePath(item.image)} alt={item.alt} width={1200} height={1200} /></div>
               <div className="research-card-copy"><span className="research-index">0{index + 1}</span><h3>{item.title}</h3><p>{item.body}</p></div>
             </article>
           ))}

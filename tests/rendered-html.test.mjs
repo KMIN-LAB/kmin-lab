@@ -73,5 +73,8 @@ test("ships meaningful alternatives for all supplied visuals", async () => {
   assert.match(html, /Kyunghun Min, principal investigator/);
   assert.match(html, /진균 멀티오믹스 연구 모식도/);
   assert.match(html, /마이크로니들 센서/);
-  assert.match(html, /합성곱 신경망/);
+  assert.match(html, /계통유전체, 버섯 이미지, 생태 데이터/);
+  assert.match(html, /research-multiomics-v2\.webp/);
+  assert.match(html, /research-nanosensor-v3\.webp/);
+  assert.match(html, /research-mushroom-ai-v3\.webp/);
 });
