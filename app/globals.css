@@ -587,9 +587,13 @@ button:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
   .about-copy h2, .section-heading h2, .pi-intro h2, .members-heading h2, .students-heading h2, .news-section h2, .contact-section h2 { font-size: 2.25rem; }
   .locale-ko .about-copy h2, .locale-ko .section-heading h2, .locale-ko .members-heading h2, .locale-ko .students-heading h2, .locale-ko .news-section h2, .locale-ko .contact-section h2 { font-size: 2.05rem; font-weight: 600; line-height: 1.14; }
   .section-heading { grid-template-columns: 36px 1fr; margin-bottom: 52px; gap: 16px; }
+  .locale-ko .research-heading { grid-template-columns: 1fr; }
+  .locale-ko .research-heading > p:last-child { grid-column: 1; }
+  .locale-ko .research-heading h2 { font-size: clamp(1.55rem, 7.7vw, 2.05rem); }
   .research-card { padding-block: 54px; }
   .research-card-image { padding: 14px; }
   .research-card h3 { font-size: 2.18rem; }
+  .locale-en .research-card h3 { font-size: clamp(1.6rem, 8vw, 2.18rem); }
   .locale-ko .research-card h3 { font-size: 1.9rem; font-weight: 600; line-height: 1.16; }
   .pi-section { grid-template-columns: 1fr; }
   .pi-portrait { max-width: 420px; }
