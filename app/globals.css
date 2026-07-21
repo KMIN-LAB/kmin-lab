@@ -9,7 +9,7 @@
   --line: rgba(13, 13, 13, 0.36);
   --soft-line: rgba(13, 13, 13, 0.16);
   --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --serif: Georgia, "Times New Roman", serif;
+  --serif: Georgia, "Times New Roman", "Noto Serif KR", "Noto Serif CJK KR", "AppleMyungjo", Batang, serif;
 }
 
 * { box-sizing: border-box; }
