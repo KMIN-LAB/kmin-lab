@@ -285,6 +285,39 @@ img { max-width: 100%; }
 }
 
 .research-card-image img { display: block; width: 100%; max-height: 590px; object-fit: contain; }
+.research-card-image--riboseq {
+  position: relative;
+  background: #fcfbf8;
+  border: 1px solid rgba(28, 92, 255, 0.28);
+}
+
+.research-card-image--riboseq::before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  left: -1px;
+  width: 76px;
+  height: 3px;
+  background: var(--blue);
+}
+
+.research-card-image-link {
+  width: 100%;
+  display: grid;
+  gap: 14px;
+}
+
+.research-card-image-action {
+  justify-self: end;
+  color: var(--blue-dark);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.research-card-image-link:hover .research-card-image-action,
+.research-card-image-link:focus-visible .research-card-image-action { text-decoration: underline; text-underline-offset: 4px; }
+.research-card-image-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 6px; }
 .research-card-copy { max-width: 560px; }
 .research-index { display: block; margin-bottom: 30px; color: var(--blue); font-size: 0.9rem; }
 

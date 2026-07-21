@@ -71,10 +71,10 @@ test("ships meaningful alternatives for all supplied visuals", async () => {
   const html = await response.text();
 
   assert.match(html, /Kyunghun Min, principal investigator/);
-  assert.match(html, /진균 멀티오믹스 연구 모식도/);
-  assert.match(html, /마이크로니들 센서/);
-  assert.match(html, /계통유전체, 버섯 이미지, 생태 데이터/);
-  assert.match(html, /research-multiomics-v2\.webp/);
-  assert.match(html, /research-nanosensor-v3\.webp/);
-  assert.match(html, /research-mushroom-ai-v3\.webp/);
+  assert.match(html, /RNA-seq과 Ribo-seq 변화량/);
+  assert.match(html, /마이크로니들 MXene-FET 센서/);
+  assert.match(html, /버섯 이미지를 합성곱 신경망으로 분석/);
+  assert.match(html, /research-riboseq-v3\.png/);
+  assert.match(html, /research-nanosensor-v4\.webp/);
+  assert.match(html, /research-mushroom-ai-v4\.webp/);
 });
