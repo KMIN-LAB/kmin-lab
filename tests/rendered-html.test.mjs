@@ -74,7 +74,8 @@ test("ships meaningful alternatives for all supplied visuals", async () => {
   assert.match(html, /RNA-seq과 Ribo-seq 변화량/);
   assert.match(html, /마이크로니들 MXene-FET 센서/);
   assert.match(html, /버섯 이미지를 합성곱 신경망으로 분석/);
-  assert.match(html, /research-riboseq-v3\.png/);
+  assert.match(html, /research-riboseq-v5\.png/);
+  assert.doesNotMatch(html, /원본 크기로 보기|View full figure/);
   assert.match(html, /research-nanosensor-v4\.webp/);
   assert.match(html, /research-mushroom-ai-v4\.webp/);
 });
