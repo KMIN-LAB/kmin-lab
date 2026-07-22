@@ -213,23 +213,25 @@ export default function LabHome({ locale }: { locale: Locale }) {
 
   return (
     <main className={`locale-${locale}`}>
-      <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Min Lab home">MIN LAB</a>
-        <nav className="desktop-nav" aria-label={locale === "ko" ? "주요 메뉴" : "Primary navigation"}>
-          {t.nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
-          <a className="language-link" href={sitePath(t.languageHref)}>{t.language}</a>
-        </nav>
-        <button className="menu-button" type="button" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
-          {menuOpen ? <X size={24} /> : <List size={24} />}
-        </button>
-      </header>
+      <div className="site-header-shell">
+        <header className="site-header">
+          <a className="wordmark" href="#top" aria-label="Min Lab home">MIN LAB</a>
+          <nav className="desktop-nav" aria-label={locale === "ko" ? "주요 메뉴" : "Primary navigation"}>
+            {t.nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
+            <a className="language-link" href={sitePath(t.languageHref)}>{t.language}</a>
+          </nav>
+          <button className="menu-button" type="button" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
+            {menuOpen ? <X size={24} /> : <List size={24} />}
+          </button>
+        </header>
 
-      {menuOpen && (
-        <nav className="mobile-nav" aria-label="Mobile navigation">
-          {t.nav.map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}<ArrowRight aria-hidden="true" size={18} /></a>)}
-          <a href={sitePath(t.languageHref)}>{t.language}<ArrowRight aria-hidden="true" size={18} /></a>
-        </nav>
-      )}
+        {menuOpen && (
+          <nav className="mobile-nav" aria-label="Mobile navigation">
+            {t.nav.map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}<ArrowRight aria-hidden="true" size={18} /></a>)}
+            <a href={sitePath(t.languageHref)}>{t.language}<ArrowRight aria-hidden="true" size={18} /></a>
+          </nav>
+        )}
+      </div>
 
       <section className="hero page-section" id="top">
         <div className="hero-copy">

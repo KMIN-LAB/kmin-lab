@@ -8,13 +8,18 @@
   --muted: #706f6b;
   --line: rgba(13, 13, 13, 0.36);
   --soft-line: rgba(13, 13, 13, 0.16);
+  --header-height: 94px;
   --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --serif: Georgia, "Times New Roman", "Noto Serif KR", "Noto Serif CJK KR", "AppleMyungjo", Batang, serif;
 }
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; background: var(--paper); }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 16px);
+  background: var(--paper);
+}
 
 body {
   margin: 0;
@@ -39,8 +44,15 @@ img { max-width: 100%; }
   margin-inline: auto;
 }
 
+.site-header-shell {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--paper);
+}
+
 .site-header {
-  min-height: 94px;
+  min-height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -333,7 +345,7 @@ img { max-width: 100%; }
 
 .pi-portrait { margin: 0; background: #e5e8e8; }
 .pi-portrait img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; object-position: center 24%; }
-.pi-intro { position: sticky; top: 34px; }
+.pi-intro { position: sticky; top: calc(var(--header-height) + 34px); }
 .pi-intro h2 { font-size: clamp(2.6rem, 3.7vw, 4rem); }
 .pi-role { max-width: 370px; margin: 28px 0 0; font-size: 1.12rem; line-height: 1.62; }
 .pi-links { margin-top: 46px; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
@@ -547,6 +559,7 @@ button:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
   .mobile-nav {
     position: absolute;
     z-index: 20;
+    top: 100%;
     left: 0;
     right: 0;
     display: flex;
@@ -588,8 +601,8 @@ button:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
 }
 
 @media (max-width: 640px) {
+  :root { --header-height: 78px; }
   .page-section, .site-header, .mobile-nav { width: calc(100% - 32px); }
-  .site-header { min-height: 78px; }
   .hero { gap: 48px; padding-block: 56px 52px; }
   .hero h1 { font-size: clamp(3rem, 14.5vw, 4.35rem); line-height: 0.94; }
   .locale-en .hero h1 { font-size: clamp(1.35rem, 6.65vw, 1.9rem); line-height: 1.05; }
