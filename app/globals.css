@@ -289,21 +289,21 @@ img { max-width: 100%; }
 .research-card:nth-child(even) .research-card-copy { order: 1; }
 
 .research-card-image {
+  position: relative;
   min-height: 430px;
   padding: clamp(20px, 3vw, 42px);
   display: grid;
   place-items: center;
   background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(28, 92, 255, 0.28);
 }
 
 .research-card-image img { display: block; width: 100%; height: auto; max-height: 590px; object-fit: contain; }
 .research-card-image--riboseq {
-  position: relative;
   background: #fcfbf8;
-  border: 1px solid rgba(28, 92, 255, 0.28);
 }
 
-.research-card-image--riboseq::before {
+.research-card-image::before {
   position: absolute;
   content: "";
   top: -1px;
