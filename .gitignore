@@ -41,3 +41,6 @@ next-env.d.ts
 /outputs/
 /work/
 /content-source/
+
+# ChatGPT Sites deployment metadata (not used by GitHub Pages)
+/.openai/
