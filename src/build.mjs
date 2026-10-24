@@ -8,7 +8,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const lines = (arr) => arr.map((l) => `<span class="ln">${esc(l)}</span>`).join(" ");
-const markAuthors = (c) => esc(c).replace(/\bK Min([*†]?)/g, '<b class="me">K Min$1</b>');
+const scientific = (s) => esc(s).replaceAll("Candida albicans", '<i lang="la">Candida albicans</i>');
+const markAuthors = (c) => scientific(c).replace(/\bK Min([*†]?)/g, '<b class="me">K Min$1</b>');
 const mapUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("부산광역시 남구 용소로 45 부경대학교");
 
 function page(locale) {
@@ -64,7 +65,7 @@ function page(locale) {
   <div class="hero-text">
     <h1 id="hero-h">${lines(t.hero2)}</h1>
     <p class="hero-line">${esc(t.heroLine)}</p>
-    <p class="hero-sub">${esc(t.hero2Sub)}</p>
+    <p class="hero-sub">${scientific(t.hero2Sub)}</p>
     <p class="actions"><a class="btn" href="#research">${esc(t.cta1)}</a><a class="btn btn-ghost" href="#join">${esc(t.cta2)}</a></p>
   </div>
   <figure class="hero-fig">${img({ image: "figures/hero-evidence.png", width: 720, height: 660 }, t.heroImgAlt, "", 'fetchpriority="high"')}</figure>
